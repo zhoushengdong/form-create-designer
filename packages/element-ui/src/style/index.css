@@ -115,6 +115,7 @@
     overflow: unset;
     position: relative;
     background-color: #FFFFFF;
+    width: 100%;
 }
 
 ._fc-l-close, ._fc-r-close, ._fc-l-open, ._fc-r-open {

@@ -39,7 +39,7 @@
                         </el-aside>
                     </el-splitter-panel>
 
-                    <el-splitter-panel v-if="!hiddenLeft" :size="activeModule === 'language' || activeModule === 'ai' ? '450px' : '266px'" min="240px">
+                    <el-splitter-panel v-if="!hiddenLeft" :size="activeModule === 'language' || activeModule === 'ai' ? '450px' : '266px'" min="240px" max="340px">
                         <el-aside class="_fc-l">
                             <div class="_fc-l-close" @click="hiddenLeft = true"><i class="fc-icon icon-arrow"></i></div>
                             <FcAiPanel v-show="activeModule === 'ai'"></FcAiPanel>
@@ -232,7 +232,7 @@
                         </el-container>
                     </el-splitter-panel>
 
-                    <el-splitter-panel size="320px" v-show="!hiddenRight" v-if="!config || config.showConfig !== false">
+                    <el-splitter-panel size="320px" max="1200px" min="250px" v-show="!hiddenRight" v-if="!config || config.showConfig !== false">
                         <el-aside class="_fc-r">
                             <div class="_fc-r-close" @click="hiddenRight = true"><i class="fc-icon icon-arrow"></i>
                             </div>
